@@ -1,0 +1,2 @@
+kernel=Alpha.bin
+kernel_address=0x07F08000
