@@ -13,7 +13,7 @@ cwd=${0%/*}
 #
 # Print the help message
 #
-irb_help() {
+cmd_help() {
   cat <<EOF
 Usage: $0 [--help] <sdcard-block-device>
 
@@ -33,7 +33,7 @@ EOF
 #
 # Mount the SD card block device `$1` into `$cfg_sdcard_mountpoint`.
 #
-irb_mount() {
+cmd_mount() {
   dev="$1"
   log_info "Temporarily mounting \`$dev\` into \`$cfg_sdcard_mountpoint\`"
   mkdir -p $cfg_sdcard_mountpoint
@@ -41,9 +41,9 @@ irb_mount() {
 }
 
 #
-# Unmount `$irb_sdcard_mountpoint`
+# Unmount `$cfg_sdcard_mountpoint`
 #
-irb_unmount() {
+cmd_unmount() {
   log_info "Un-mounting \`$cfg_sdcard_mountpoint\`"
   sync $cfg_sdcard_mountpoint/*
   sudo umount $cfg_sdcard_mountpoint
@@ -52,9 +52,9 @@ irb_unmount() {
 #
 # Download official firmwares from the RPi repo
 #
-irb_download_files() {
+cmd_download_files() {
   dst="$1"
-  if ! irb_check_fw_sha256 $dst --quiet 1>&- 2>&-; then
+  if ! cmd_check_fw_sha256 $dst --quiet 1>&- 2>&-; then
       log_info "Downloading the Raspberry Pi's firmware version $cfg_rpi_fw_version"
       (
           cd $dst
@@ -66,12 +66,12 @@ irb_download_files() {
 #
 # Copy downloaded files into the mounted SD card and check the file integrity.
 #
-irb_copy_files() {
+cmd_copy_files() {
   src=$1
   log_info "Installing the RPi firmware and the Alpha debugger"
   cp -fv $src/bootcode.bin $src/start.elf $src/Alpha.bin $src/config.txt $cfg_sdcard_mountpoint
   log_info "Checking the integrity"
-  irb_check_fw_sha256 $cfg_sdcard_mountpoint
+  cmd_check_fw_sha256 $cfg_sdcard_mountpoint
   echo "$cfg_alpha_sha256  $cfg_sdcard_mountpoint/Alpha.bin" | sha256sum -c -
 }
 
@@ -79,7 +79,7 @@ irb_copy_files() {
 # Check the sha256sum of the firmware stored in $1.
 # Optionally pass an extra sha256sum argument as $2.
 #
-irb_check_fw_sha256() {
+cmd_check_fw_sha256() {
   ( echo "$cfg_bootcode_download_sha256  $1/bootcode.bin" | sha256sum -c $2 - ) || return 1
   echo "$cfg_start_download_sha256  $1/start.elf" | sha256sum -c $2 -
 }
@@ -87,11 +87,11 @@ irb_check_fw_sha256() {
 #
 # script entry function
 #
-cbf() {
+cmd() {
   while [ $# -gt 0 ]; do
     case $1 in
       -h|--help)
-        irb_help
+        cmd_help
         return 1 # note: doing this makes only one --help message possible
         ;;
 
@@ -118,19 +118,17 @@ cbf() {
   fi
 
   src='boot'
-  irb_download_files $src
-  irb_mount "$dev"
-  trap 'irb_unmount "$dev"' INT QUIT KILL ABRT
-  if ! irb_copy_files $src; then
-    irb_unmount "$dev"
+  cmd_download_files $src
+  cmd_mount "$dev"
+  trap 'cmd_unmount "$dev"' INT QUIT KILL ABRT
+  if ! cmd_copy_files $src; then
+    cmd_unmount "$dev"
     return 1
   fi
-  irb_unmount "$dev"
+  cmd_unmount "$dev"
   log_info 'Your SD card is ready!'
   log_info "You can now insert it into the RPi and use Alpha through the RPI's Mini-UART"
   return 0
 }
 
-# call the entry function `cbf` if in interactive mode.
-process_is_interactive &&
-  cbf $@
+cmd $@
