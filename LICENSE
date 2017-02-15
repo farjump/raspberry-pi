@@ -1,0 +1,186 @@
+FARJUMP SAS ("FARJUMP"), FOR AND ON BEHALF OF ITSELF AND ITS
+SUBSIDIARIES AND AFFILIATES UNDER COMMON CONTROL, IS WILLING TO
+LICENSE THE SOFTWARE TO YOU ONLY UPON THE CONDITION THAT YOU ACCEPT
+ALL OF THE TERMS CONTAINED IN THIS BINARY CODE LICENSE AGREEMENT AND
+SUPPLEMENTAL LICENSE TERMS (COLLECTIVELY "AGREEMENT"). PLEASE READ THE
+AGREEMENT CAREFULLY. BY COPYING OR USING THE SOFTWARE YOU ACKNOWLEDGE
+THAT YOU HAVE READ THE TERMS AND AGREE TO THEM. IF YOU ARE AGREEING TO
+THESE TERMS ON BEHALF OF A COMPANY OR OTHER LEGAL ENTITY, YOU
+REPRESENT THAT YOU HAVE THE LEGAL AUTHORITY TO BIND THE LEGAL ENTITY
+TO THESE TERMS. IF YOU DO NOT HAVE SUCH AUTHORITY, YOU MUST NOT USE
+THE SOFTWARE.
+
+1. Words in the singular mean and include the plural and vice
+   versa. Words in the masculine gender include the feminine gender and
+   vice versa. Words in the neuter gender include the masculine gender
+   and the feminine gender and vice versa.
+
+    "License" shall mean the terms and conditions for use,
+    reproduction, and distribution as defined by this document.
+
+    "Licensor" shall mean the copyright owner or entity authorized by
+    the copyright owner that is granting the License.
+
+    "Legal Entity" shall mean the union of the acting entity and all
+    other entities that control, are controlled by, or are under
+    common control with that entity. For the purposes of this
+    definition, "control" means (i) the power, direct or indirect, to
+    cause the direction or management of such entity, whether by
+    contract or otherwise, or (ii) ownership of fifty percent (50%) or
+    more of the outstanding shares, or (iii) beneficial ownership of
+    such entity.
+
+    "You" (or "Your") shall mean an individual or Legal Entity exercising
+    permissions granted by this License.
+
+    "Source" form shall mean the preferred form for making
+    modifications, including but not limited to software source code,
+    documentation source, and configuration files.
+
+    "Object" form shall mean any form resulting from mechanical
+    transformation or translation of a Source form, including but not
+    limited to compiled object code, generated documentation, and
+    conversions to other media types.
+
+    "Software" means Alpha in binary form that you copied, downloaded,
+    installed or used, any other machine readable materials
+    (including, but not limited to, libraries, source files, header
+    files, and data files), any updates or error corrections provided
+    by Farjump, and any user manuals, programming guides and other
+    documentation provided to you by Farjump under this Agreement. The
+    use of Software in systems and solutions that provide dedicated
+    functionality or designed for use in embedded or function-specific
+    software applications, for example but not limited to: Software
+    embedded in or bundled with Specialised Computers and Servers,
+    defined below, is licensed under this Agreement.
+
+    "Specialised Computers and Servers" means computer systems and
+    solutions with dedicated functionality or designed for use in
+    embedded or function-specific software applications, for example
+    but not limited to: Software embedded in or bundled with industrial
+    control systems, wireless mobile telephones, wireless handheld
+    devices, kiosks, TV/STB, Blu-ray Disc devices, telematics and
+    network control switching equipment, printers and storage
+    management systems, and other related computers, including desktop
+    and laptop computers, or servers, used for computing functions
+    under end user control.
+
+    "Contribution" shall mean any work of authorship, including the
+    original version of the Work and any modifications or additions to
+    that Work or Derivative Works thereof, that is intentionally
+    submitted to Licensor for inclusion in the Work by the copyright
+    owner or by an individual or Legal Entity authorized to submit on
+    behalf of the copyright owner. For the purposes of this definition,
+    "submitted" means any form of electronic, verbal, or written
+    communication sent to the Licensor or its representatives,
+    including but not limited to communication on electronic mailing
+    lists, source code control systems, and issue tracking systems that
+    are managed by, or on behalf of, the Licensor for the purpose of
+    discussing and improving the Work, but excluding communication that
+    is conspicuously marked or otherwise designated in writing by the
+    copyright owner as "Not a Contribution."
+
+    "Contributor" shall mean Licensor and any individual or Legal Entity
+    on behalf of whom a Contribution has been received by Licensor and
+    subsequently incorporated within the Work.
+
+    "Work" shall mean the work of authorship, whether in Source or
+    Object form, made available under the License, as indicated by a
+    copyright notice that is included in or attached to the work.
+
+2. Subject to the terms and conditions of this Agreement including,
+   but not limited to, Farjump grants you a non-exclusive,
+   non-transferable, limited license without license fees to reproduce
+   and use internally the Software complete and unmodified for the sole
+   purpose of running and using Alpha.
+
+3. Software is copyrighted. All associated intellectual property
+   rights is retained by Farjump and/or its licensors. Unless
+   enforcement is prohibited by applicable law, you may not modify,
+   reverse engineer, or decompile the Software in any manner through
+   current or future available technologies. If you use the Software
+   in dangerous applications, then you shall be responsible to take
+   all appropriate fail-safe, backup, redundancy, and other measures
+   to ensure its safe use. Farjump disclaims any express or implied
+   warranty of fitness for such uses. No right, title or interest in
+   or to any trademark, service mark, logo or trade name of Farjump or
+   its licensors is granted under this Agreement.
+
+4. Commercial Use of Softwares and Alpha for any commercial or
+   production purpose is not licensed under this Agreement and you must
+   obtain a separate license from Farjump.
+
+5. Farjump grants you a non-exclusive, non-transferable, limited
+   license without fees to reproduce internally and use internally the
+   Software complete and unmodified for the purpose of designing,
+   developing, and testing your programs. You may copy and distribute the
+   Software in object code or executable form complete and unmodified and
+   only bundled as part of, and for the sole purpose of running, your
+   programs, under these present terms.  Each time you distribute the
+   Software, the recipient automatically receives a license from the
+   original licensor to copy, distribute or modify the Software subject
+   to these terms and conditions. You may not impose any further
+   restrictions on the recipients' exercise of the rights granted
+   herein. You are not responsible for enforcing compliance by third
+   parties to this License.
+
+6. Additional copyright notices and license terms applicable to
+   portions of the Software are set forth in the NOTICE file. In
+   addition to any terms and conditions of any third party
+   opensource/freeware license identified in the NOTICE file, the
+   disclaimer of warranty and limitation of liability shall apply to
+   all Software in this distribution.
+
+7. Submission of Contributions. Unless You explicitly state otherwise,
+   any Contribution intentionally submitted for inclusion in the Work
+   by You to the Licensor shall be under the terms and conditions of
+   this License, without any additional terms or conditions.
+   Notwithstanding the above, nothing herein shall supersede or modify
+   the terms of any separate license agreement you may have executed
+   with Licensor regarding such Contributions.
+
+8. Subject to the terms and conditions of this License, each
+   Contributor hereby grants to You a perpetual, worldwide,
+   non-exclusive, no-charge, royalty-free, irrevocable (except as
+   stated in this section) patent license to make, have made, use,
+   offer to sell, sell, import, and otherwise transfer the Work, where
+   such license applies only to those patent claims licensable by such
+   Contributor that are necessarily infringed by their Contribution(s)
+   alone or by combination of their Contribution(s) with the Work to
+   which such Contribution(s) was submitted. If You institute patent
+   litigation against any entity (including a cross-claim or
+   counterclaim in a lawsuit) alleging that the Work or a Contribution
+   incorporated within the Work constitutes direct or contributory
+   patent infringement, then any patent licenses granted to You under
+   this License for that Work shall terminate as of the date such
+   litigation is filed.
+
+11. Online support or maintenance is provided as part of this
+    Agreement filling an issue at the following address
+    https://github.com/farjump/raspberrypi/issues/.
+
+12. BECAUSE THE SOFTWARE IS LICENSED FREE OF CHARGE, THERE IS NO
+    WARRANTY FOR THE SOFTWARE, TO THE EXTENT PERMITTED BY APPLICABLE
+    LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS
+    AND/OR OTHER PARTIES PROVIDE THE SOFTWARE "AS IS" WITHOUT WARRANTY
+    OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT
+    LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+    FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND
+    PERFORMANCE OF THE SOFTWARE IS WITH YOU. SHOULD THE SOFTWARE PROVE
+    DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR
+    OR CORRECTION.
+
+13. IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN
+    WRITING WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MAY
+    MODIFY AND/OR REDISTRIBUTE THE SOFTWARE AS PERMITTED ABOVE, BE
+    LIABLE TO YOU FOR DAMAGES, INCLUDING ANY GENERAL, SPECIAL,
+    INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OR
+    INABILITY TO USE THE SOFTWARE (INCLUDING BUT NOT LIMITED TO LOSS
+    OF DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY
+    YOU OR THIRD PARTIES OR A FAILURE OF THE SOFTWARE TO OPERATE WITH
+    ANY OTHER SOFTWARES), EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN
+    ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+END OF TERMS AND CONDITIONS
+
+Copyright 2017 Farjump, SAS.
