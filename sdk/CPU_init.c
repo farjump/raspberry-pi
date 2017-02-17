@@ -1,6 +1,6 @@
 
 
-/* This function initialise the MMU with the followin maaping */
+/* This function initialise the MMU with the following mapping */
 /*        Physical 0x00000000 - 0x20000000, virtual 0x00000000 - 0x20000000,   RWX user, RWX super, write-back, no write allocate */
 /* RPI1   Physical 0x20000000 - 0x21000000, virtual 0x20000000 - 0x21000000,   RWX user, RWX super, write-back, no-cacheable */
 /* RPI2&3 Physical 0x3F000000 - 0x40000000, virtual 0x20000000 - 0x21000000,   RWX user, RWX super, write-back, no-cacheable */
@@ -52,26 +52,26 @@ void CPU_init()
    unsigned int main_id;
    unsigned int physical_io_address;
    unsigned int i;
-   
+
    /* reading CPU id to known RPI version */
    main_id = CPU_init_read_main_id();
 
    /* rpi1 armv6 */
    if ((main_id & 0xF000) == 0xB000)
    {
-      physical_io_address = RPI1_IO_BASE_ADDRESS; 
+      physical_io_address = RPI1_IO_BASE_ADDRESS;
    }
    /* rpi2 armv7 */
    else if ((main_id & 0xF000) == 0xC000)
    {
-      physical_io_address = RPI2_IO_BASE_ADDRESS; 
+      physical_io_address = RPI2_IO_BASE_ADDRESS;
    }
    /* rpi3 armv8 */
    else if ((main_id & 0xF000) == 0xD000)
    {
-      physical_io_address = RPI3_IO_BASE_ADDRESS; 
+      physical_io_address = RPI3_IO_BASE_ADDRESS;
    }
-   
+
    /* clear page table */
    for (i = 0;i < NB_1M_SECTION; i++)
    {
@@ -81,7 +81,7 @@ void CPU_init()
    /* map     Physical 0x00000000 - 0x20000000, virtual 0x00000000 - 0x20000000,   RWX user, RWX super, write-back, no write allocate */
    for (i = 0x00000000; i < (512 * ONE_MB); i+= ONE_MB)
    {
-      CPU_init_map_section(CPU_init_page_table,i,i,0x0c); // cacheable no write allocate 
+      CPU_init_map_section(CPU_init_page_table,i,i,0x0c); // cacheable no write allocate
    }
 
    /* RPI1   Physical 0x20000000 - 0x21000000, virtual 0x20000000 - 0x21000000,   RWX user, RWX super, write-back, no-cacheable */
