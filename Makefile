@@ -29,6 +29,9 @@ $(elfs): $$(sources/$$@)
 	$(toolchain)-gcc $(cflags) $(ldflags) -Wl,-Map,$(basename $@).map -o $@ $(cflags/$@) $^ $(libs/$@)
 
 .PHONY: shell
+define docker/build :=
+docker build -f sdk/Dockerfile --build-arg uid=$$(id -u) .
+endef
 shell:
-	docker build --build-arg uid=$$(id -u) .
-	docker run -it -v $$PWD:$$PWD -w $$PWD --privileged $$(docker build -q --build-arg uid=$$(id -u) .)
+	$(docker/build)
+	docker run -it -v $$PWD:$$PWD -w $$PWD --privileged $$($(docker/build) -q)
