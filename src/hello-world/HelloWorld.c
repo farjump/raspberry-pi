@@ -2,5 +2,5 @@
 
 int main(void)
 {
-  printf("Hello RPi!\n");
+  printf("Hello %s!\n", "RPi");
 }
