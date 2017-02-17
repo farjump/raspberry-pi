@@ -11,7 +11,7 @@ cflags/raytracer.elf  := -Og
 
 # Common Flags
 cflags  := -specs=sdk/Alpha.specs -mfloat-abi=hard -mfpu=vfp -march=armv6zk -mtune=arm1176jzf-s -g3 -ggdb
-ldflags := -Wl,-Tsdk/link.ld -Lsdk
+ldflags := -Wl,-Tsdk/link.ld -Lsdk -Wl,-umalloc
 
 .PHONY: all
 all: $(elfs)
