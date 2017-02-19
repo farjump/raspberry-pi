@@ -23,7 +23,8 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 
 # Official distribution of the ARM Toolchain
 COPY ./scripts/ /tmp/scripts/
-RUN bash -c /tmp/scripts/install-toolchain.sh
+RUN /tmp/scripts/install-toolchain.sh --prefix=/opt/arm-none-eabi
+ENV PATH="/opt/arm-none-eabi/bin:$PATH"
 
 # Create a non-root user with the same uid as on the host to allow proper file
 # permissions created inside the container. Since it is not root, allow calling
