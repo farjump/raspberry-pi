@@ -1,6 +1,6 @@
 # Alpha
 
-<img alt="Alpha Logo" src="doc/img/logo-alpha.svg" width="200" />
+<img alt="Alpha Logo" src="https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/logo-alpha.svg" width="200" />
 
 [Alpha] is a system-level [GDB] server (aka "gdbstub" and "gdb stubs")
 allowing you to dynamically debug anything running in your hardware
@@ -150,7 +150,7 @@ files, etc.
 - isatty
 - system
 
-![GDB File I/O](doc/img/gdb-fileio.svg)
+![GDB File I/O](https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/gdb-fileio.svg)
 
 
 ### List of implemented syscalls
@@ -174,7 +174,7 @@ next non-free memory region.
 [Alpha] maps an address space including the RAM and the memory-mapped
 I/Os:
 
-<img alt="RPi Address Space" src="doc/img/rpi-mmap.svg" width="900" />
+<img alt="RPi Address Space" src="https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/rpi-mmap.svg" width="900" />
 
 
 ## An extended GDB server
@@ -259,7 +259,7 @@ gdb/catch exception [yes|no]
 
 # Installation
 
-![GDB remote link with the Raspberry Pi](doc/img/rpi-embedded-dev.svg)
+![GDB remote link with the Raspberry Pi](https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/rpi-embedded-dev.svg)
 
 
 ## Alpha
@@ -310,11 +310,12 @@ Here are some random converter references:
 - [FTDI's TTL cable `TTL-232R-3V3`](https://shop.clickandbuild.com/cnb/shop/ftdichip?productID=53&op=catalogue-product_info-null&prodCategoryID=296).
 - Or do it yourself using a USB-UART TTL 3.3V converter, 3 jumper cables and 1 USB cable.
 
-![Using a TTL Cable](https://cdn-learn.adafruit.com/assets/assets/000/035/695/medium640/learn_raspberry_pi_piconsole_bb.png?1473736644)
-![Using a converter](doc/img/rpi-1aplus-wiring.jpeg)
+<img alt="Using a TTL Cable" src="https://cdn-learn.adafruit.com/assets/assets/000/035/695/medium640/learn_raspberry_pi_piconsole_bb.png?1473736644" width="640" />
+
+<img alt="Using a converter" src="doc/img/rpi-1aplus-wiring.jpeg" width="640" />
 
 
-# Program examples
+# Examples
 
 Three bare metal programs are provided as examples: a hello world
 including bare metal calls to `printf()` and `scanf()`, and a
@@ -461,7 +462,7 @@ You can also [contact us](https://farjump.io/contact-us).
 
 See [LICENSE](LICENSE) for the full license text.
 
-![Farjump Logo](doc/img/logo-farjump.svg)
+[![Farjump Logo](https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/logo-farjump.svg)](https://farjump.io)
 
 
 [Alpha]: https://farjump.io/alpha
