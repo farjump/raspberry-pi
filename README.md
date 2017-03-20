@@ -1,14 +1,16 @@
+<img alt="Alpha Logo" src="https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/logo-alpha.svg" width="200" />
+
 # Alpha
 
-<img alt="Alpha Logo" src="https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/logo-alpha.svg" width="200" />
+[GDB] offers the best embedded software development experience by
+allowing you to remotely load, debug and test your programs and
+hardware/software interfaces.
 
 [Alpha] is a system-level [GDB] server (aka "gdbstub" and "gdb stubs")
 allowing you to dynamically debug anything running in your hardware
 target, from bare metal software to OS-backed programs, including
 their threads, the underlying drivers, etc. All with a single GDB
-session and **without any JTAG probe**. [GDB] simply offers the best
-embedded software development experience by allowing you to remotely
-load, debug and test your programs and hardware/software interfaces.
+session and **without any JTAG probe**.
 
 This repository contains the freemium distribution of [Alpha] for any
 version of the Raspberry Pi.
