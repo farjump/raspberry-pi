@@ -23,11 +23,13 @@ version of the Raspberry Pi.
 [Alpha] provides a **modern** & **convenient** bare metal programming
 environment:
 
-
 - A ready-to-use hardware state thanks to more advanced hardware
   initialization than what firmwares or bootloaders usually do,
   including the floating point unit, caches and a convenient address
-  space.
+  space. Note that only the 32-bit mode of the ARM architecture is
+  supported and that other modes are part of our business-level
+  plan. Please, [contact us for more
+  details](https://farjump.io/contact-us).
 
 - The ability to run standard C programs bare metal. C library
   functions involving syscalls (`malloc`, `printf`, etc.) are
@@ -112,14 +114,14 @@ communicating through USB, or whatever comes to your mind.
 
 ## Operating System Debugging
 
-OS-aware debugging is part of our business offer and is disabled in
+OS-aware debugging is part of our business-level plan and is disabled in
 this version. Please, [contact us for more
 details](https://farjump.io/contact-us).
 
 
 ## Multi-core Debugging
 
-Multi-core debugging is part of our business offer and is disabled in
+Multi-core debugging is part of our business-level plan and is disabled in
 this version. Please, [contact us for more
 details](https://farjump.io/contact-us).
 
