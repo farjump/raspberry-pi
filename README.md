@@ -25,7 +25,7 @@ environment:
 
 
 - A ready-to-use hardware state thanks to more advanced hardware
-  initializations than what firmwares or bootloaders usually do,
+  initialization than what firmwares or bootloaders usually do,
   including the floating point unit, caches and a convenient address
   space.
 
@@ -69,7 +69,7 @@ Simply plug your I/O peripheral and get started:
 
 That way, you can easily write, debug and test your I/O library just
 using [GDB], and then integrate it as a driver in any OS driver API
-such as linux, FreeRTOS, etc.
+such as Linux, FreeRTOS, etc.
 
 
 ### High performance
@@ -113,6 +113,13 @@ communicating through USB, or whatever comes to your mind.
 ## Operating System Debugging
 
 OS-aware debugging is part of our business offer and is disabled in
+this version. Please, [contact us for more
+details](https://farjump.io/contact-us).
+
+
+## Multi-core Debugging
+
+Multi-core debugging is part of our business offer and is disabled in
 this version. Please, [contact us for more
 details](https://farjump.io/contact-us).
 
@@ -166,7 +173,7 @@ Syscalls that are implemented and can be used bare metal:
 
 ### A stack
 
-The stack address is configured in the linker script throught the
+The stack address is configured in the linker script through the
 `__stack` symbol.  Its size is thus the configured address minus the
 next non-free memory region.
 
@@ -226,7 +233,7 @@ The raytracer example below use it to be able to interrupt endless
 loop and quit GDB.
 
 
-### Extra GDB commands
+### Alpha-specific commands
 
 [Alpha] provides extra GDB commands accessible through `monitor`:
 
@@ -304,7 +311,7 @@ $ ./scripts/install-rpi-boot.sh /dev/<your SD card>
 
 Using GDB in client/server mode requires a link between your
 workstation and your Raspberry Pi. For portability reasons, we chose
-the Raspberry Pi's MiniUART. You can connect it to your workstation
+the Raspberry Pi's Mini-UART. You can connect it to your workstation
 using a USB-UART TTL **3.3V** (not 5V) converter.
 
 Here are some random converter references:
@@ -324,7 +331,7 @@ including bare metal calls to `printf()` and `scanf()`, and a
 raytracer using the GPU.
 
 Note that we use docker to produce our development environments and
-build a debian image with the expected tools, including the GCC
+build a Debian image with the expected tools, including the GCC
 toolchain for the ARM architecture. The Makefile command `make shell`
 builds the docker image according to [`sdk/Dockerfile`](sdk/Dockerfile).
 It is up to you to use it or use instead your own setup.
