@@ -20,12 +20,18 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
   curl \
   make \
   libncurses5 \
+  gawk \
+  git \
   ca-certificates
 
 # Official distribution of the ARM Toolchain
 COPY ./scripts/ /tmp/scripts/
 RUN /tmp/scripts/install-toolchain.sh --prefix=/opt/arm-none-eabi
 ENV PATH="/opt/arm-none-eabi/bin:$PATH"
+
+# Helper script to generate the markdown Table of Content
+RUN curl -sSL https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc > /usr/local/bin/gh-md-toc \
+    && chmod +x /usr/local/bin/gh-md-toc
 
 # Create a non-root user with the same uid as on the host to allow proper file
 # permissions created inside the container. Since it is not root, allow calling
