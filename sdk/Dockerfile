@@ -19,6 +19,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
   bzip2 \
   curl \
   make \
+  libncurses5 \
   ca-certificates
 
 # Official distribution of the ARM Toolchain
