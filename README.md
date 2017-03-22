@@ -1,6 +1,6 @@
-<a href="https://farjump.io/"><img alt="Farjump Logo" src="https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/logo-farjump.svg" width="50%" /></a>
+<a href="https://farjump.io/"><img alt="Farjump Logo" src="https://cdn.rawgit.com/farjump/raspberry-pi/master/doc/img/logo-farjump.svg" width="50%" /></a>
 
-Alpha <img alt="Alpha Logo" src="https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/logo-alpha.svg" width="28" style="display: inline-block" />
+Alpha <img alt="Alpha Logo" src="https://cdn.rawgit.com/farjump/raspberry-pi/master/doc/img/logo-alpha.svg" width="28" style="display: inline-block" />
 ======================
 
 [GDB] offers the best embedded software development experience by
@@ -22,7 +22,7 @@ version of the Raspberry Pi.
 Table of Contents
 =================
 
-   * [Alpha <a href="https://camo.githubusercontent.com/b6f75ef7c6de224d68c9ae9ee31dbd8ecce39c09/68747470733a2f2f63646e2e7261776769742e636f6d2f6661726a756d702f7261737062657272792d70692f666561747572652d726561646d652d6765742d737461727465642f646f632f696d672f6c6f676f2d616c7068612e737667" target="_blank"><img alt="Alpha Logo" src="https://camo.githubusercontent.com/b6f75ef7c6de224d68c9ae9ee31dbd8ecce39c09/68747470733a2f2f63646e2e7261776769742e636f6d2f6661726a756d702f7261737062657272792d70692f666561747572652d726561646d652d6765742d737461727465642f646f632f696d672f6c6f676f2d616c7068612e737667" width="28" data-canonical-src="https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/logo-alpha.svg" style="max-width:100\x;"></a>](#alpha-)
+   * [Alpha <a href="https://camo.githubusercontent.com/b6f75ef7c6de224d68c9ae9ee31dbd8ecce39c09/68747470733a2f2f63646e2e7261776769742e636f6d2f6661726a756d702f7261737062657272792d70692f666561747572652d726561646d652d6765742d737461727465642f646f632f696d672f6c6f676f2d616c7068612e737667" target="_blank"><img alt="Alpha Logo" src="https://camo.githubusercontent.com/b6f75ef7c6de224d68c9ae9ee31dbd8ecce39c09/68747470733a2f2f63646e2e7261776769742e636f6d2f6661726a756d702f7261737062657272792d70692f666561747572652d726561646d652d6765742d737461727465642f646f632f696d672f6c6f676f2d616c7068612e737667" width="28" data-canonical-src="https://cdn.rawgit.com/farjump/raspberry-pi/master/doc/img/logo-alpha.svg" style="max-width:100\x;"></a>](#alpha-)
    * [Table of Contents](#table-of-contents)
    * [Use Cases](#use-cases)
       * [Bare Metal Programming](#bare-metal-programming)
@@ -230,7 +230,7 @@ minus the next non-free memory region.
 [Alpha] maps a useful address space including the RAM and the
 memory-mapped I/Os:
 
-<img alt="RPi Address Space" src="https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/rpi-mmap.svg" width="900" />
+<img alt="RPi Address Space" src="https://cdn.rawgit.com/farjump/raspberry-pi/master/doc/img/rpi-mmap.svg" width="900" />
 
 
 ## An extended GDB server
@@ -543,6 +543,6 @@ See [LICENSE](LICENSE) for the full license text.
 [read]: https://sourceware.org/gdb/onlinedocs/gdb/Memory.html
 [time-to-blink-a-led]: https://www.youtube.com/watch?v=niSBhjHa22I
 [contact-us]: https://farjump.io/contact-us
-[img-gdb-fileio]: https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/gdb-fileio.svg
-[img-rpi-embedded-dev]: https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/rpi-embedded-dev.svg
+[img-gdb-fileio]: https://cdn.rawgit.com/farjump/raspberry-pi/master/doc/img/gdb-fileio.svg
+[img-rpi-embedded-dev]: https://cdn.rawgit.com/farjump/raspberry-pi/master/doc/img/rpi-embedded-dev.svg
 [arm-toolchain]: https://developer.arm.com/open-source/gnu-toolchain/gnu-rm
