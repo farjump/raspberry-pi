@@ -35,3 +35,7 @@ endef
 shell:
 	$(docker/build)
 	docker run -it -v $$PWD:$$PWD -w $$PWD --privileged $$($(docker/build) -q)
+
+.PHONY: README.md
+README.md:
+	./scripts/update-readme.sh
