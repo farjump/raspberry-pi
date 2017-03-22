@@ -1,6 +1,7 @@
-<img alt="Alpha Logo" src="https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/logo-alpha.svg" width="200" />
+<a href="https://farjump.io/"><img alt="Farjump Logo" src="https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/logo-farjump.svg" width="50%" /></a>
 
-# Alpha
+Alpha <img alt="Alpha Logo" src="https://cdn.rawgit.com/farjump/raspberry-pi/feature-readme-get-started/doc/img/logo-alpha.svg" width="28" style="display: inline-block" />
+======================
 
 [GDB] offers the best embedded software development experience by
 allowing you to remotely load, debug and test your programs and
