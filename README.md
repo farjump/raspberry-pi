@@ -282,30 +282,41 @@ loop and quit GDB.
 
 ```text
 (gdb) monitor help
-help [command name]
-    - Print help of all or help of command in parameter
+help [COMMAND]
+    Print help of all or help of COMMAND in parameter
+
 version
-    - Print version of Alpha Target
-mr8 address [count]
-    - Read count or 1 8bit word at address
-mr16 address [count]
-    - Read count or 1 16bit word at address
-mr32 address [count]
-    - Read count or 1 32bit word at address
-mw8 address value
-    - Write the 8bit word value at address
-mw16 address value
-    - Write the 16bit word value at address
-mw32 address value
-    - Write the 32bit word value at address
-fill32 address count value
-    - Fill at address count 32bit word with value
+    Print version of Alpha Target
+
+mr8 ADDRESS [COUNT]
+    Read COUNT or 1 8bit word at ADDRESS
+
+mr16 ADDRESS [COUNT]
+    Read COUNT or 1 16bit word at ADDRESS
+
+mr32 ADDRESS [COUNT]
+    Read COUNT or 1 32bit word at ADDRESS
+
+mw8 ADDRESS VALUE
+    Write the 8bit word VALUE at ADDRESS
+
+mw16 ADDRESS VALUE
+    Write the 16bit word VALUE at ADDRESS
+
+mw32 ADDRESS VALUE
+    Write the 32bit word VALUE at ADDRESS
+
+fill32 ADDRESS COUNT VALUE
+    Fill at ADDRESS COUNT 32bit word with VALUE
+
 gdb/wcet [yes|no]
-    - Print or set Alpha WCET mode
+    Print or set Alpha WCET mode
+
 gdb/catch
-    - Print the Alpha catch state of all exceptions
-gdb/catch exception [yes|no]
-    - Print or set Alpha catch state for 1 exception
+    Print the list of exceptions that can be caught by Alpha
+
+gdb/catch EXCEPTION [yes|no]
+    Print or set/unset the catching of EXCEPTION
 ```
 
 
