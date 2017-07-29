@@ -1,4 +1,4 @@
-<a href="https://farjump.io/"><img alt="Farjump Logo" src="https://cdn.rawgit.com/farjump/raspberry-pi/master/doc/img/logo-farjump.svg" width="50%" /></a>
+<a href="https://farjump.io/" target="_blank"><img alt="Farjump Logo" src="https://cdn.rawgit.com/farjump/raspberry-pi/master/doc/img/logo-farjump.svg" width="50%" /></a>
 
 Alpha <img alt="Alpha Logo" src="https://cdn.rawgit.com/farjump/raspberry-pi/master/doc/img/logo-alpha.svg" width="28" style="display: inline-block" />
 ======================
@@ -14,6 +14,9 @@ target, from bare metal software to OS-backed programs, including
 their threads, the underlying drivers, etc. All with a single GDB
 session and **without any JTAG probe**.
 
+
+<a href="https://asciinema.org/a/108532" target="_blank"><img alt="Hello World Example" src="https://asciinema.org/a/108532.png" width="50%" /></a>
+
 This repository contains the freemium distribution of [Alpha] for any
 version of the Raspberry Pi.
 
@@ -22,8 +25,6 @@ version of the Raspberry Pi.
 Table of Contents
 =================
 
-   * [Alpha <a href="https://camo.githubusercontent.com/b6f75ef7c6de224d68c9ae9ee31dbd8ecce39c09/68747470733a2f2f63646e2e7261776769742e636f6d2f6661726a756d702f7261737062657272792d70692f666561747572652d726561646d652d6765742d737461727465642f646f632f696d672f6c6f676f2d616c7068612e737667" target="_blank"><img alt="Alpha Logo" src="https://camo.githubusercontent.com/b6f75ef7c6de224d68c9ae9ee31dbd8ecce39c09/68747470733a2f2f63646e2e7261776769742e636f6d2f6661726a756d702f7261737062657272792d70692f666561747572652d726561646d652d6765742d737461727465642f646f632f696d672f6c6f676f2d616c7068612e737667" width="28" data-canonical-src="https://cdn.rawgit.com/farjump/raspberry-pi/master/doc/img/logo-alpha.svg" style="max-width:100\x;"></a>](#alpha-)
-   * [Table of Contents](#table-of-contents)
    * [Use Cases](#use-cases)
       * [Bare Metal Programming](#bare-metal-programming)
          * [Benchmarking](#benchmarking)
