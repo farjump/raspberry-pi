@@ -537,7 +537,7 @@ Feel free to also [contact us][contact-us].
 See [LICENSE](LICENSE) for the full license text.
 
 
-[Alpha]: https://farjump.io/alpha
+[Alpha]: https://farjump.io
 [GDB]: https://sourceware.org/gdb/current/onlinedocs/gdb/Summary.html
 [newlib]: https://sourceware.org/newlib/
 [write]: https://sourceware.org/gdb/current/onlinedocs/gdb/Assignment.html
